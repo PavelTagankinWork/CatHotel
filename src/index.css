@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Rubik";
+  src: url('../fonts/Rubik-VariableFont_wght.woff2') format('woff2');
+  font-weight: 500
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url('../fonts/Lato-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:  'Rubik' , 'Lato' ,'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+
+.lato {
+  font-family: 'Lato';
+}

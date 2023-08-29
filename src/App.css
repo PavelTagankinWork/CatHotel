@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+.active {
+  transform: translateY(0%) !important;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.socialMedia {
+  list-style-type: none;
+  display: flex;
+  gap: 18px;
+}
+
+.socialMediaItem {
+  cursor: pointer;
+}
+
+.slick-track {
+  overflow: hidden;
+}
+
+.closed {
+  display: none !important;
+}
+
+@media (min-width: 1366px) {
+  .closed {
+    display: block !important;
+  }
+}

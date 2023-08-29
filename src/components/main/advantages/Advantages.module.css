@@ -1,0 +1,107 @@
+.section {
+    padding-top: 70px;
+    background-image: url('../../../../public/img/paw-little.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 70px;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.list {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    list-style-type: none;
+}
+
+.item {
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 43px;
+    padding-top: 115px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 25px 0px rgba(208, 208, 208, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: 25px 25px;
+}
+
+.itemTitle {
+    margin-bottom: 20px;
+}
+
+.temp {
+    background-image: url('../../../../public/img/adv-temp.svg');
+}
+
+.cam {
+    background-image: url('../../../../public/img/adv-cam.svg');
+}
+
+.taxi {
+    background-image: url('../../../../public/img/adv-taxi.svg');
+}
+
+.food {
+    background-image: url('../../../../public/img/adv-food.svg');
+}
+
+.walk {
+    background-image: url('../../../../public/img/adv-walk.svg');
+}
+
+.vet {
+    background-image: url('../../../../public/img/adv-vet.svg');
+}
+
+.itemDescription {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+@media(min-width: 768px) {
+    .item {
+        margin-bottom: 0;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 30px;
+        margin: 0 auto;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .section {
+        background-image: url('../../../../public/img/paw-medium.svg');
+        background-position: 100% 10px;
+    }
+}
+
+@media(min-width: 1366px) {
+    .list {
+        grid-template-columns: repeat(3, 370px);
+        width: 1170px;
+    }
+
+    .item {
+        background-size: 91px 91px;
+        background-position: 30px 30px;
+        padding-top: 156px;
+    }
+
+    .section {
+        background-image: url('../../../../public/img/paw-big.svg');
+    }
+}

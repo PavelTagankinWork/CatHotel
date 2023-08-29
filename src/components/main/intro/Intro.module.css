@@ -1,0 +1,105 @@
+@import '../../../index.css';
+
+.article {
+    background-image: url('../../../../public/img/mainbg-round.png'),
+                    url('../../../../public/img/mainbg.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 -70px,
+                        center bottom;
+    background-size: contain,
+                        cover;
+    min-height: 457px;
+}
+
+.intro {
+    padding-bottom: 100%;
+    padding-top: 50px;
+}
+
+.city {
+    font-family: Lato;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+}
+
+.catTitle {
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 52px;
+}
+
+.catDescription {
+    font-family: Lato;
+    
+    font-size: 16px;
+    line-height: 19px;
+} 
+
+.introButton {
+    width: 206px;
+    min-height: 50px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    border: none;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 40px;
+    text-align: left;
+    padding-left: 30px;
+    background-image: url('../../../../public/img/buttonpaw.svg');
+    background-repeat: no-repeat;
+    background-position: 163px 7px;
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .article {
+        background-image: url('../../../../public/img/mainbg-round.png'),
+                            url('../../../../public/img/mainbg-tablet.jpg');
+        background-size: 100% 400px,
+                        cover;
+        min-height: 868px;
+    }
+
+    .intro {
+        padding-bottom: 0;
+        padding-top: 140px;
+    }
+}
+
+@media(min-width: 1366px) {
+    .article {
+        background-image: url('../../../../public/img/mainbg-round-desktop.png'),
+                            url('../../../../public/img/mainbg-desktop.jpg');
+        background-size: cover,
+                        cover;
+        background-position: 0 0,
+                            center center;
+        min-height: 504px;
+    }
+
+    .intro {
+        width: 346px;
+        margin-left: 15%;
+        text-align: left;
+    }
+
+    .catTitle {
+        font-size: 62px;
+        line-height: 73px;
+    }
+
+    .catDescription {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .introButton {
+        padding-left: 25px;
+    }
+}

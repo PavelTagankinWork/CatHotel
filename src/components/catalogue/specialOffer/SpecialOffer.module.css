@@ -1,0 +1,103 @@
+.specialOffer {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 70px;
+    border-radius: 8px;
+    margin-bottom: 70px;
+}
+
+.specialOfferBlock {
+    background-image: url(../../../../public/img/offer.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 446px;
+    padding-top: 50px;
+    border-radius: 8px;
+    
+}
+
+.blockTitle {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.blockTitleAccent {
+    font-size: 37px;
+}
+
+.blockDescription {
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    width: 239px;
+    margin: 0 auto;
+}
+
+@media (min-resolution: 2dppx) {
+    .specialOfferBlock {
+        background-image: url('../../../../public/img/offer-2x.jpg');
+    }
+}
+
+@media (min-width: 768px) {
+
+    .specialOffer {
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+
+    .specialOfferBlock {
+        background-image: url('../../../../public/img/offer-tab.jpg');
+        background-position: center;
+        width: 578px;
+        min-height: 359px;
+        margin: 0 auto;
+        text-align: left;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .blockTitle {
+        font-size: 36px;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .blockTitleAccent {
+        font-size: 56px;
+    }
+
+    .blockDescription {
+        margin: 0;
+    }
+
+    @media (min-resolution: 2dppx) {
+        .specialOfferBlock {
+            background-image: url('../../../../public/img/offer-tab-2x.jpg');
+        }
+    }
+}
+
+@media (min-width: 1366px) {
+
+    .specialOffer {
+        margin-top: 140px;
+        margin-bottom: 140px;
+    }
+
+    .specialOfferBlock {
+        background-image: url('../../../../public/img/offer-des.jpg');
+        width: 900px;
+        padding-left: 270px;
+    }
+
+    @media (min-resolution: 2dppx) {
+        .specialOfferBlock {
+            background-image: url('../../../../public/img/offer-des-2x.jpg');
+        }
+    }
+}

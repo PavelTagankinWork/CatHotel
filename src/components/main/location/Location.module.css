@@ -1,0 +1,73 @@
+.location {
+    width: 100%;
+    min-height: 777px;
+}
+
+.locationInfo {
+    padding-top: 40px;
+    padding-left: 15px;
+    text-align: left;
+    background: var(--unnamed, #FAC663);
+    padding-bottom: 40px;
+}
+
+.locationTitle {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.locationTitleInfo {
+    color: var(--unnamed, #1A212F);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.locationTitleDes {
+    display: block;
+    width: 213px;
+    color: var(--unnamed, #1A212F);
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.locationMap {
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.locationMapSource {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .location {
+        min-height: 522px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .locationTitle {
+        font-size: 36px;
+    }
+
+    .locationMapSource {
+        min-height: 522px;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1366px) {
+    .location {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .locationInfo {
+        padding-left: 198px;
+    }
+}

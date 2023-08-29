@@ -1,0 +1,18 @@
+.card {
+    width: 300px;
+    margin: 0 auto;
+    min-height: 200px;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    padding-top: 100px;
+}
+
+.cardTitle {
+    font-size: 45px;
+}
+
+.cardDescription {
+    font-size: 20px;
+}

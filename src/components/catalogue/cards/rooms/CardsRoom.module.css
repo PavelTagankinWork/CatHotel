@@ -1,0 +1,137 @@
+
+.cardsLink {
+    text-decoration: none;
+    color: black;
+}
+
+.singleRoom {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+.roomsList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.roomItem {
+    width: 100%;
+    min-height: 428px;
+    box-shadow: 0px 0px 25px 0px rgba(208, 208, 208, 0.25);
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+.roomImg {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.roomItemSpec {
+    text-decoration: none !important;
+    color: black;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    border-right: 1px solid #E1E1E1;
+    border-left: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    border-radius: 0px 0px 8px 8px;
+    min-height: 213px;
+}
+
+.roomItemTitle {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.roomItemDes {
+    position: relative;
+    display: block;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.roomItemEqp {
+    width: 16px;
+    height: 16px;
+}
+
+.eqpBlock {
+    display: flex;
+    gap: 15px;
+}
+
+.eqpSvg {
+    display: flex;
+    gap: 15px;
+}
+
+.singleTitle {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+
+    .singleRoom {
+        display: flex;
+        gap: 59px;
+        margin: 0 auto;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .roomsList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    .roomItem {
+        width: 324px;
+    }
+
+    .roomImg {
+        width: 324px;
+        height: 185px;
+    }
+
+    .singleImg {
+        width: 450px;
+        height: 288px;
+        object-fit: cover;
+    }
+
+    .singleTitle {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1366px) {
+    .roomsList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .singleImg {
+        width: 650px;
+        height: 396px;
+    }
+}

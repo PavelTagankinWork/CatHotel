@@ -1,0 +1,297 @@
+.cards {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cardsFilters {
+    display: flex;
+    gap: 27px;
+    margin-top: 40px;
+}
+
+.closeButton {
+    position: absolute;
+    width: 22px;
+    height: 14px;
+    background-color: transparent;
+    top: 20px;
+    left: 85%;
+    border: none;
+    cursor: pointer;
+}
+
+.closeButton::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 21px;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+    transform: rotate(45deg);
+    top: 5px;
+}
+
+.closeButton::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 21px;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+    transform: rotate(-45deg);
+    top: 5px;
+}
+
+.cardsFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    z-index: 5;
+}
+
+.cardsFilterButton {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 600;
+    width: 111px;
+    min-height: 35px;
+    border-radius: 25px;
+    background: #FFF;
+    box-shadow: 0px 2px 12px 0px rgba(173, 152, 143, 0.18);
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+.cardsSortButton {
+    font-family: Lato;
+    
+    text-decoration: none;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 10px;
+    width: 81px;
+    padding-top: 9px;
+    min-height: 23px;
+    background-image: url('../../../../public/img/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: 15px 12px;
+}
+
+.cardsFilter {
+    position: relative;
+    margin: auto;
+    width: 240px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 25px 0px rgba(153, 153, 153, 0.25);
+    background: #FFFEFD;
+    padding: 25px;
+    font-family: Lato;
+}
+
+.cardsArea {
+    margin-bottom: 25px;
+    font-family: Lato;
+    color: var(--unnamed, #1A212F);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.cardsAreaItem {
+    margin-bottom: 22px;
+}
+
+.cardsAreaList {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.cardsAreaItemControl {
+    position: relative;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.cardsAreaItemInput {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.cardsAreaItemMark {
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color: #f2f2f2;
+    pointer-events: none;
+    border: 1px solid #E1E1E1;
+}
+
+.cardsAreaItemInput[type=checkbox]:checked + .cardsAreaItemMark {
+    background-image: url('../../../../public/img/tick.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.filterButtons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.submitButton {
+    width: 100%;
+    min-height: 42px;
+    text-align: center;
+    border-radius: 25px;
+    background: var(--unnamed, #FAC663);
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.resetButton {
+    width: 100%;
+    min-height: 42px;
+    border-radius: 25px;
+    border: 2px solid var(--unnamed, #FAC663);
+    background: transparent;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.rangeInputs {
+    display: flex;
+    gap: 14px;
+    width: auto;
+    min-height: 48px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.rangeLabels {
+    position: relative;
+}
+
+.rangeLabel {
+    position:relative;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+
+.rangeInput {
+    background-color: transparent;
+    border: none;
+    appearance: textfield;
+    border: 1px solid #E1E1E1;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 25px;
+    width: 71px;
+    font-family: Lato;
+    
+}
+
+.rangeMin {
+    font-family: Lato;
+    
+    position: absolute;
+    top: 26%;
+    left: 6px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+@media (min-width: 768px) {
+    .cardsHeader {
+        display: flex;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+
+    .cardsFilters {
+        display: flex;
+        margin: 0;
+        margin-left: auto;
+        margin-right: 45px;
+    }
+
+    .cardsFilter {
+        width: 333px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .cardsFilterButton {
+        display: none;
+    }
+
+    .cardsSortButton {
+        padding-top: 13px;
+        background-position: 15px 17px;
+    }
+
+    .cardsSortButton {
+        display: block;
+    }
+
+    .cardsTitle {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .cardsHeader {
+        margin-left: 0;
+        margin: 0 auto;
+        margin-top: 82px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .cardsFixed {
+        background-color: transparent;
+        position: relative;
+        width: 250px;
+    }
+
+    .cardsFilter {
+        box-shadow: none;
+        width: 209px;
+    }
+
+    .closeButton {
+        display: none;
+    }
+
+    .catalogueMenu {
+        display: flex;
+        justify-content: space-around;
+    }
+}

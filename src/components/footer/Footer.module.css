@@ -1,0 +1,117 @@
+.footer {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.footer::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 68%;
+    left: -0%;
+    width: 100%;
+    height: 1px;
+    background: #EFEFEF;
+}
+
+.footerInfo {
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+
+.footerLink {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.footerLists {
+    display: flex;
+    gap: 30%;
+}
+
+.footerList {
+    list-style-type: none;
+}
+
+.footerItem {
+    margin-bottom: 20px;
+    font-family: Lato;
+    font-size: 16px;
+}
+
+.footerCR {
+    text-align: left;
+    padding-left: 15px;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    color: #8F8F8F;
+}
+
+.footerRights {
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.footerRights::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 3px;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    background-image: url('../../../public/img/cr.svg');
+    background-repeat: no-repeat;
+    background-size: 9px 9px;
+}
+
+.footerPolicy {
+    display: block;
+}
+
+@media (min-width: 768px) {
+
+    .footer {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .footer::before {
+        top: 50%;
+    }
+
+    .footerInfo {
+        padding-left: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footerLists {
+        width: 405px;
+        gap: 30px;
+    }
+
+    .footerList {
+        display: flex;
+        gap: 30px;
+        cursor: pointer;
+    }
+
+    .footerCR {
+        display: flex;
+        padding-top: 20px;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1366px) {
+    .footer {
+        padding-left: 214px;
+        padding-right: 214px;
+    }
+}

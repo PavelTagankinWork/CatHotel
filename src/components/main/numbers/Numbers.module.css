@@ -1,0 +1,171 @@
+.numbers {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: url('../../../../public/img/numberbg.svg');
+    background-repeat: no-repeat;
+    background-position: 0 110px;
+}
+
+.numbersTitle {
+    margin-bottom: 40px;
+}
+
+.numbersCardSection {
+    padding-bottom: 25px;
+}
+
+.numbersCard {
+    min-height: 444px;
+    text-align: left;
+    box-shadow: 0px 0px 25px 0px rgba(208, 208, 208, 0.25);
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+.numbersCardImg {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+}
+
+.numbersCardTitle {
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.numbersCardList {
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+.numbersCardItem {
+    font-family: Lato;
+    color: var(--unnamed, #1A212F);
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 17px;
+    vertical-align: middle;
+    width: 180px;
+}
+
+.numbersCardItem::before {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-color: rgba(250, 198, 99, 1);
+    border-radius: 25px;
+    margin-right: 8px;
+}
+
+.numbersCardButton {
+    display: block;
+    margin: 0 auto;
+    padding-left: 49px;
+    text-align: left;
+    width: 240px;
+    min-height: 50px;
+    border-radius: 25px;
+    background-color: rgba(255, 114, 54, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    background-image: url('../../../../public/img/buttonpaw-orange.svg');
+    background-repeat: no-repeat;
+    background-position: 197px 7px;
+    cursor: pointer;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+
+    .numbers {
+        padding-top: 120px;
+        background-size: 339px 106px;
+        background-position: 0 152px;
+    }
+
+    .numbersCardImg {
+        width: 442px;
+        height: 326px;
+    }
+
+    .numbersTitle {
+        margin-bottom: 60px;
+        font-size: 36px;
+    }
+
+    .numbersCard {
+        position: relative;
+        width: 678px !important;
+        min-height: 326px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .numbersCardSection {
+        position: absolute;
+        display: block;
+        width: 345px;
+        min-height: 266px;
+        top: 30px;
+        left: 333px;
+        padding-bottom: 0;
+        background: #FFF;
+        box-shadow: 0px 0px 25px 0px rgba(208, 208, 208, 0.25);
+        border-radius: 8px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .numbers {
+        padding-top: 130px;
+        background-size: 484px 151px;
+        background-position: 0 146px;
+    }
+
+    .numbersCardImg {
+        width: 600px;
+        height: 404px;
+    }
+
+    .numbersCard {
+        width: 1030px !important;
+        min-height: 404px;
+    }
+
+    .numbersCardSection {
+        width: 500px;
+        min-height: 284px;
+        top: 60px;
+        left: 530px;
+    }
+
+    .numbersCardTitle {
+        margin-left: 100px;
+    }
+
+    .numbersCardList {
+        margin-left: 100px;
+    }
+
+    .numbersCardButton {
+        width: 274px;
+        background-position: 230px 7px;
+        padding-left: 75px;
+    }
+
+    .numbersCardButtonMG {
+        margin-left: 100px;
+    }
+}
